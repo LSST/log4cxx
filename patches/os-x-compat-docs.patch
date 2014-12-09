@@ -1,0 +1,11 @@
+--- src/site/doxy/Makefile.orig	2014-12-08 13:57:07.000000000 -0800
++++ src/site/doxy/Makefile	2014-12-08 17:53:07.000000000 -0800
+@@ -379,7 +379,7 @@
+ 
+ install-data-hook:
+ 	$(mkinstalldirs) $(DESTDIR)$(htmldest)
+-	cp -dpR manual/* $(DESTDIR)$(htmldest)
++	cp -a manual/* $(DESTDIR)$(htmldest)
+ 
+ # Automake's "distcheck" is sensitive to having files left over
+ # after "make uninstall", so we have to clean up the install hook.
